@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de Posição e Localização</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style_app.css">
+</head>
+<body>
+    <div class="container">
+        <div class="grid-section flex-1">
+            <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Posição e Localização</h1>
+            <p class="text-lg text-center text-gray-600 mb-8">Observe os objetos e clique nas imagens corretas para cada desafio.</p>
+
+            <div id="gameGrid" class="grid-container">
+            </div>
+            <div id="feedbackMessage" class="feedback-message">
+                Clique em um desafio para começar!
+            </div>
+            <div class="button-group">
+                <button id="resetButton" class="action-button">Reiniciar Jogo</button>
+                <a href="index.html" id="backButton" class="action-button back-button">Voltar para Outra Página</a>
+            </div>
+        </div>
+
+        <div class="challenges-section flex-1">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Desafios:</h2>
+            <div id="challengesList" class="challenges-container">
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script_app.js"></script>
+</body>
+</html>
